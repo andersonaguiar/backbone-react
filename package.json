@@ -1,0 +1,19 @@
+{
+  "name": "teste",
+  "version": "0.0.1",
+  "title": "teste",
+  "description": "teste",
+  "author": {
+    "name": "Anderson Aguiar",
+    "email": "andersonaguiar.web@gmail.com",
+    "url": "https://github.com/andersonaguiar"
+  },
+  "maintainers": [],
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-browser-sync": "^0.9.1",
+    "grunt-contrib-compass": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.1",
+    "matchdep": "~0.1.2"  
+  }
+}
