@@ -37,14 +37,13 @@ var App = App || {};
         },
 
         componentWillMount: function() {
-            // console.time('Render');
             // get cars
             var cars = this.props.cars;
             cars.once('sync', function() {
                 this.forceUpdate();
             }, this);
 
-            // listen de event of filter
+            // listen event filter
             Backbone.Events.on('filter:cars', function(filters) {
                 console.log(this.props.cars.customFilter(filters), filters)
                 this.setState({cars: this.props.cars.customFilter(filters)});
@@ -60,7 +59,7 @@ var App = App || {};
 
             return (
                 <ul className="vehiclesList">
-                {cars}
+                    {cars}
                 </ul>
             );
         }
