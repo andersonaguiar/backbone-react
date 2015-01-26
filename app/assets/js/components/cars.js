@@ -6,9 +6,9 @@ var App = App || {};
     var Car = React.createClass({
         _setImage: function(imagem){
             // seta a logo da marca caso a imagem seja null
-            return ( 
-                imagem === null || imagem === undefined 
-                ? 'http://s17.postimg.org/tvd138lv3/Volkswagen_5.jpg' 
+            return (
+                imagem === null || imagem === undefined
+                ? 'http://s17.postimg.org/tvd138lv3/Volkswagen_5.jpg'
                 : imagem
             );
         },
