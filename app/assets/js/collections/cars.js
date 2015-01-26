@@ -5,7 +5,7 @@ var App = App || {};
 
 	App.CarsCollection = Backbone.Collection.extend({
 	    model: App.Car,
-	    url: 'carga.json',
+	    url: 'api/cars.json',
 
 		customFilter: function(filters){
 			var results = this.where(filters);

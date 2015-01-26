@@ -1,4 +1,11 @@
 bower_components/
 node_modules/
 .sass-cache
-app/vendors
+app/vendors/fastclick
+app/vendors/jquery
+app/vendors/modernizr
+app/vendors/react
+app/vendors/underscore
+app/vendors/jquery-placeholder
+app/vendors/jquery.cookie
+app/vendors/backbone
