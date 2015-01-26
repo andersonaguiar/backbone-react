@@ -1,14 +1,14 @@
 var App = App || {};
 
 (function(){
-	'use strict';
+    'use strict';
 
-	var Filter    = App.Filter,
-		Cars      = App.Cars,
-		router    = new App.Router(function() {
-	        Backbone.history.start();
-	    });
+    var Filter      = App.Filter,
+    Cars            = App.Cars,
+    router          = new App.Router(function() {
+        Backbone.history.start();
+    });
 
-	React.render(<Filter />, document.getElementById('top-filter'));
-	React.render(<Cars cars={router.cars} />, document.getElementById('frota'));
+    React.render(<Filter />, document.getElementById('top-filter'));
+    React.render(<Cars cars={router.cars} />, document.getElementById('frota'));
 })();

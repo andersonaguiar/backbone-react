@@ -51,9 +51,7 @@ var App = App || {};
             }.bind(this));
         },
 
-        componentDidMount: function() {
-            // console.timeEnd('Render');
-        },
+        componentDidMount: function() { },
 
         render: function() {
             var cars = this.state.cars.map(function(car) {
@@ -62,7 +60,7 @@ var App = App || {};
 
             return (
                 <ul className="vehiclesList">
-                    {cars}
+                {cars}
                 </ul>
             );
         }
