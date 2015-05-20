@@ -1,67 +1,66 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
 <html class="no-js" lang="pt-BR" itemscope itemtype="http://schema.org">
-<!--<![endif]-->
-	<head>
-	    <title>Teste - Backbone + React</title>
+  <head>
+    <title>Teste - Backbone + React</title>
 
-	    <meta charset="UTF-8">
-	    <meta name="author" content="Anderson Aguiar"/>
-	    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"/>
-	    <meta name="description" content="Teste - Backbone + React"/>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anderson Aguiar"/>
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"/>
+    <meta name="description" content="Teste - Backbone + React"/>
 
-		<link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
-		<!-- REACT -->
-		<script type="text/javascript" src="vendors/react/react.min.js"></script>
-		<script type="text/javascript" src="vendors/react/react-with-addons.js"></script>
-		<script type="text/javascript" src="vendors/react/JSXTransformer.js"></script>
+    <!-- REACT -->
+    <!-- <script type="text/javascript" src="vendors/react/react.min.js"></script>
+    <script type="text/javascript" src="vendors/react/react-with-addons.js"></script>
+    <script type="text/javascript" src="vendors/react/JSXTransformer.js"></script>
+-->
+    <!-- JQUERY + BACKBONE -->
+   <!-- <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/underscore/underscore-min.js"></script>
+    <script src="vendors/backbone/backbone.js"></script>
+-->
+    <!-- FILES BACKBONE
+    <script src="assets/js/models/car.js"></script>
+    <script src="assets/js/collections/cars.js"></script>
+    <script src="assets/js/router.js"></script>
+-->
+    <!-- COMPONENTS REACT
+    <script type="text/jsx" src="assets/js/components/filter.js"></script>
+    <script type="text/jsx" src="assets/js/components/cars.js"></script>
 
-		<!-- JQUERY + BACKBONE -->
-		<script src="vendors/jquery/dist/jquery.min.js"></script>
-		<script src="vendors/underscore/underscore-min.js"></script>
-		<script src="vendors/backbone/backbone.js"></script>
 
-		<!-- FILES BACKBONE -->
-		<script src="assets/js/models/car.js"></script>
-		<script src="assets/js/collections/cars.js"></script>
-		<script src="assets/js/router.js"></script>
 
-		<!-- COMPONENTS REACT -->
-		<script type="text/jsx" src="assets/js/components/filter.js"></script>
-		<script type="text/jsx" src="assets/js/components/cars.js"></script>
 
-		<!-- START -->
-		<script type="text/jsx" src="assets/js/app.js"></script>
-	</head>
-	<body>
-		<nav class="top-bar" data-topbar="" role="navigation">
-			<!-- Title -->
-			<ul class="title-area">
-				<!-- Mobile Menu Toggle -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-			</ul>
+    <script type="text/jsx" src="assets/js/app.js"></script>
+-->
+  </head>
+  <body data-load="all teste">
+    <nav class="top-bar" data-topbar="" role="navigation">
+      <!-- Title -->
+      <ul class="title-area">
+        <!-- Mobile Menu Toggle -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
 
-			<!-- Top Bar Section -->
-			<section class="top-bar-section">
+      <!-- Top Bar Section -->
+      <section class="top-bar-section">
 
-				<!-- Top Bar Left Nav Elements -->
-				<div id="top-filter">
-				</div>
+        <!-- Top Bar Left Nav Elements -->
+        <div id="top-filter">
+        </div>
 
-				<!-- Top Bar Right Nav Elements -->
-				<ul class="right">
-					<!-- Divider -->
-					<li class="divider"></li>
-					<!-- Button -->
-				</ul>
-			</section>
-		</nav>
+        <!-- Top Bar Right Nav Elements -->
+        <ul class="right">
+          <!-- Divider -->
+          <li class="divider"></li>
+          <!-- Button -->
+        </ul>
+      </section>
+    </nav>
 
-		<div class="content-main" id="frota">
-		</div>
-	</body>
+    <div class="content-main" id="frota"></div>
+
+    <script data-main="assets/js/main" src="vendor/requirejs/require.js"></script>
+  </body>
 </html>

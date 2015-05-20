@@ -1,20 +1,14 @@
 {
-  "name": "backbone-react-example",
+  "name": "backbone-react",
   "version": "0.0.1",
   "authors": [
     "Anderson Aguiar <andersonaguiar.web@gmail.com>"
   ],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
+  "devDependencies": {
     "react": "*",
     "backbone": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "requirejs": "~2.1.17"
   }
 }

@@ -9,3 +9,12 @@ app/vendors/underscore
 app/vendors/jquery-placeholder
 app/vendors/jquery.cookie
 app/vendors/backbone
+app/vendor/backbone
+app/vendor/fastclick
+app/vendor/jquery
+app/vendor/modernizr
+app/vendor/requirejs
+app/vendor/react
+app/vendor/jquery-placeholder
+app/vendor/jquery.cookie
+app/vendor/underscore

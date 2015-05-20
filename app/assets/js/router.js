@@ -1,10 +1,10 @@
-var App = App || {};
-
-(function() {
+define(
+  'router',
+  [
+    'collection/car'
+  ],
+  function (CarCollection) {
     'use strict';
-
-    var Car     = App.Car,
-        Cars    = App.CarsCollection;
 
     var Router = Backbone.Router.extend({
         routes: {
@@ -13,7 +13,7 @@ var App = App || {};
         },
 
         initialize: function(callback) {
-            this.cars = new Cars();
+            this.cars = new CarCollection();
             this.cars.fetch();
             this.cars.on('sync', function() {
                 callback();
@@ -25,5 +25,6 @@ var App = App || {};
         car: function(id) { }
     });
 
-    App.Router = Router;
-})();
+    return Router;
+  }
+);

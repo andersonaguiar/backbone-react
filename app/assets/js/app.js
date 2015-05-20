@@ -1,14 +1,22 @@
-var App = App || {};
-
-(function(){
+define(
+  'app',
+  [
+    'backbone',
+    'underscore',
+    'react',
+    'router',
+    'components/filter',
+    'components/cars'
+  ],
+  function (Backbone, _, React, Router, ComponentFilter, ComponentCars) {
     'use strict';
 
-    var Filter      = App.Filter,
-        Cars        = App.Cars,
-        router      = new App.Router(function() {
+    var router  = new Router(function() {
             Backbone.history.start();
         });
 
-    React.render(<Filter />, document.getElementById('top-filter'));
-    React.render(<Cars cars={router.cars} />, document.getElementById('frota'));
-})();
+    React.render(React.createElement(ComponentFilter), document.getElementById('top-filter'));
+    React.render(React.createElement(ComponentCars, {cars: router.cars}), document.getElementById('frota'));
+  }
+);
+
