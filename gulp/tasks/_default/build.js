@@ -1,0 +1,9 @@
+gulp.task(
+  'build',
+  [
+    'copy-assets',
+    'uglifyJs',
+    config.preprocessor.choice,
+    'browserSync'
+  ]
+);

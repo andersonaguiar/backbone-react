@@ -9,6 +9,7 @@
     "react": "*",
     "backbone": "*",
     "jquery": "*",
-    "requirejs": "~2.1.17"
+    "requirejs": "~2.1.17",
+    "foundation": "~5.5.2"
   }
 }

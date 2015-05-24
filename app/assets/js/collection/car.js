@@ -15,8 +15,8 @@ define(
         return results;
       },
 
-      parse: function(response){
-        return response;
+      parse: function(payload){
+        return payload;
       }
     });
 

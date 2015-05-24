@@ -1,14 +1,14 @@
 // =======================================================================================================================
 // # VENDORS
-// ======================================================================================================================= 
+// =======================================================================================================================
 
 // COMPASS
 @import "compass/css3/";
 
 // FOUNDATION
-@import "../../vendors/foundation/scss/normalize";                         
-@import "../../vendors/foundation/scss/foundation/settings";               
-@import "../../vendors/foundation/scss/foundation";                         
+@import "foundation/scss/normalize";
+@import "foundation/scss/foundation/settings";
+@import "foundation/scss/foundation";
 
 //=======================================================================================================================
 
@@ -30,15 +30,5 @@
 
 .vehiclesList-item {
 	text-align: center;
-	a, img {
-		@include border-radius(8px);
-	}
-	a {
-		@include thumb(
-			$border-width: 2px,
-			$box-shadow: 0 0 0 1px rgba(#000, .2),
-			$box-shadow-hover: 0 0 6px 1px rgba(#ccc,0.5)
-		);
-	}
 }
 
